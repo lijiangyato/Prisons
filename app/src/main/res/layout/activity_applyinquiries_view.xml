@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar_main_id"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#2f404a"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="申请单查询"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_20" />
+    </android.support.v7.widget.Toolbar>
+
+    <devlight.io.library.ntb.NavigationTabBar
+        android:id="@+id/name_TabBar_id"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:ntb_active_color="#fda700"
+        app:ntb_bg_color="#213c4f"
+        app:ntb_icon_size_fraction="0"
+        app:ntb_inactive_color="#969f96"
+        app:ntb_scaled="true"
+        app:ntb_title_mode="all"
+        app:ntb_title_size="@dimen/sp_14"
+        app:ntb_titled="true" />
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/attribute_form_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_weight="1"
+            android:background="#205172"
+            android:text="返回首页"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_20" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_weight="1"
+            android:background="#20445e"
+            android:text="退出登陆"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_20" />
+    </LinearLayout>
+</LinearLayout>

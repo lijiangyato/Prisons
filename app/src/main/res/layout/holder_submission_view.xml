@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/attribute_determine_id"
+        android:textColor="#ffffff"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/dp_45"
+        android:background="#398edb"
+        android:text="完成注册" />
+</LinearLayout>

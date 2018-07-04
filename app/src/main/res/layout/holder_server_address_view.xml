@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/config_ip_tv"
+        style="@style/config_text_30px_balck_style"
+        android:text="服务器地址:" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+
+            android:id="@+id/attribute_ip_id"
+            style="@style/config_text_30px_blue_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_37"
+            android:background="@null"
+            android:hint="192.168.1.7"
+            android:paddingLeft="@dimen/dp_10"
+            android:singleLine="true"
+            android:textColorHint="#7aa9e0" />
+
+        <ImageView
+            style="@style/lay_divide_line_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_37"
+            android:contentDescription="@null" />
+
+    </RelativeLayout>
+</LinearLayout>

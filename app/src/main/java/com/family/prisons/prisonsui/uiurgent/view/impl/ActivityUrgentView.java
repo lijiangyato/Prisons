@@ -1,0 +1,31 @@
+package com.family.prisons.prisonsui.uiurgent.view.impl;
+
+import android.os.Bundle;
+
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.family.prisons.R;
+import com.family.prisons.prisonsfather.BaseActivity;
+
+/**
+ * Created by ThinkPad on 2018/6/15.
+ */
+@Route(path = "/prisonsui/activity/ActivityUrgentView", name = "紧急拨号")
+
+public class ActivityUrgentView extends BaseActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_urgent_view);
+    }
+
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void initData() {
+
+    }
+}

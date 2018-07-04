@@ -1,0 +1,129 @@
+apply plugin: 'com.android.library'
+//android.useDeprecatedNdk = true
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        /*路由机制依赖库*/
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+        ndk {
+            // 设置支持的SO库架构
+           // abiFilters 'armeabi' , 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+            //abiFilters 'armeabi-v7a', 'arm64-v8a','armeabi'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            // 配置so库目录
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+
+    //    compile 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+
+    //androidTestImplementation 'com.android.support.test:runner:1.0.2'
+
+    //androidTestImplementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+
+    //oxffff：65536
+    api 'com.android.support:multidex:1.0.1'
+
+    //路由机制依赖库
+    api 'com.alibaba:arouter-api:1.2.1'
+    annotationProcessor 'com.alibaba:arouter-compiler:1.1.2'
+
+    //适配器
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.21'
+
+    //网络请求
+    api 'com.squareup.retrofit2:retrofit:2.2.0'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    //Rxjava
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+
+    /* compile 'com.squareup.retrofit2:adapter-r;lsxjava2:2.3.0'*/
+    api 'io.reactivex.rxjava2:rxjava:2.1.0'
+    api 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+    //网络请求okhttp
+    api 'com.qianwen:okhttp-utils:3.8.0'
+
+    //gson数据解析
+    api 'com.google.code.gson:gson:2.8.0'
+
+    //注解
+    api 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //实现滑动关闭当前Activity依赖库
+    api 'cn.bingoogolapple:bga-swipebacklayout:1.0.8@aar'
+
+    //日志
+    api 'com.github.zhaokaiqiang.klog:library:1.5.0'
+
+    //沉浸状态栏 库有问题
+
+    /* compile 'com.jaeger.statusbaruitl:library:1.4.0'*/
+
+    //屏幕适配
+    api 'com.zhy:autolayout:1.4.5'
+
+    //对话框
+    api 'com.flyco.dialog:FlycoDialog_Lib:1.3.2@aar'
+
+    //弹出提示框
+    api 'com.github.javiersantos:MaterialStyledDialogs:2.1'
+
+    //刷新数据
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-7'
+
+    //加载
+    api 'com.tuyenmonkey:mkloader:1.4.0'
+
+    //分割线
+    api 'com.arjinmc.android:recyclerviewdecoration:2.5.2'
+    //弹出框
+    api 'com.github.yilylong:CBDialog:v1.0.6'
+    //工具类
+    api 'com.blankj:utilcode:1.9.12'
+    //更新ui
+    api 'org.greenrobot:eventbus:3.0.0'
+    //api 'com.abrahamcaijin.commonutil:CommonUtil:1.0.2'
+    //图片圆形
+    api 'com.github.thinkcool:circletextimageview:1.0.20151218'
+    //noinspection GradleCompatible
+    api 'com.android.support:gridlayout-v7:27.1.1'
+   //选项卡
+    api 'com.github.Andy671:Dachshund-Tab-Layout:v0.3.3'
+    //导航栏
+    api 'devlight.io:navigationtabbar:1.2.5'
+   // compile 'com.android.support:support-v4:23.1.1'
+    api 'devlight.io:navigationtabbar:1.2.5'
+
+
+
+}

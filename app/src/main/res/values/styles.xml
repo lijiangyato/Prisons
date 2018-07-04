@@ -1,0 +1,99 @@
+<resources>
+
+  <!--  &lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>-->
+    <style name="full_screen_style">
+
+
+                <item name="android:windowNoTitle">true</item>
+                <item name="android:windowFullscreen">true</item>
+
+    </style>
+
+    <style name="config_text_30px_balck_style">
+        <item name="android:textSize">22dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+    <style name="config_text_30px_blue_style">
+        <item name="android:textSize">@dimen/dp_30</item>
+        <item name="android:textColor">#698e81</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="lay_divide_line_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_1</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">#5533ae74</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--导航栏底色-->
+        <item name="colorPrimary">#fda700</item>
+        <!--状态栏底色-->
+        <item name="colorPrimaryDark">#fda700</item>
+        <!--导航栏上的标题颜色-->
+        <item name="android:textColorPrimary">#374254</item>
+        <!--Activity窗口的颜色-->
+        <item name="android:windowBackground">@android:color/background_light</item>
+        <!--按钮选中或者点击获得焦点后的颜色-->
+        <item name="colorAccent">#fda700</item>
+        <!--和 colorAccent相反，正常状态下按钮的颜色-->
+        <item name="colorControlNormal">#fda700</item>
+        <!--Button按钮正常状态颜色-->
+        <item name="colorButtonNormal">#ffffff</item>
+        <!--EditText 输入框中字体的颜色-->
+        <item name="editTextColor">@android:color/white</item>
+        <!--Navigation icon颜色设置-->
+        <item name="drawerArrowStyle">@style/AppTheme.MyDrawerArrowStyle</item>
+        <!--popupMenu弹出菜单样式-->
+        <item name="popupMenuStyle">@style/AppThemePopupMenu</item>
+        <item name="textAppearanceSmallPopupMenu">@style/AppThemeTextAppearance</item>
+        <item name="textAppearanceLargePopupMenu">@style/AppThemeTextAppearance</item>
+    </style>
+    <!-- 用于开启滑动返回功能的 Activity -->
+    <style name="AppTheme.Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--加入一個新的 navigation drarwer 的风格-->
+    <style name="AppTheme.MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <!--将 spinBars 属性设定为 false-->
+        <item name="spinBars">false</item>
+        <!--设定 drawer arrow 的颜色-->
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="AppThemePopupMenu">
+        <item name="android:popupBackground">#1ad568</item>
+    </style>
+    <style name="AppThemeTextAppearance">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <style name="config_select_text_style">
+        <item name="android:background">@drawable/text_background_frame</item>
+        <item name="android:textSize">@dimen/dp_20</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_50</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/dp_10</item>
+        <item name="android:layout_marginRight">@dimen/dp_10</item>
+    </style>
+
+</resources>

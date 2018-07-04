@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="homehui">
+        <item>#ecd800</item>
+        <item>#d8863a</item>
+        <item>#57b09e</item>
+        <item>#efeff4</item>
+        <item>#efeff4</item>
+        <item>#ecc414</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="240dp"
+        android:background="@drawable/dieg_background_view"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="#2097d4"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp_22"
+            android:gravity="center"
+            android:text="请选择登录用户" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/attribut_egaoler_id"
+                android:orientation="vertical"
+               android:layout_marginLeft="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ffffff">
+                <ImageView
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:text="劳头登录"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="200dp"
+                android:background="#ffd902" />
+
+            <LinearLayout
+               android:id="@+id/attribut_criminal_id"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="2dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:text="罪犯登陆"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

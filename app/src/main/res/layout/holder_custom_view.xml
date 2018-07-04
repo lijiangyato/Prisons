@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_45"
+    android:orientation="horizontal">
+
+
+<TextView
+    android:gravity="center"
+    android:layout_weight="1"
+    android:text="孙悟空"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="孙悟空"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="孙悟空"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/attribute_number_id"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="拨打"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
